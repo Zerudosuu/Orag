@@ -40,7 +40,7 @@ To ensure smooth collaboration, please follow these rules:
         ```
         /Scripts/Ronald/
         ```
-    - Art assets by Maria go inside:  
+    - Art assets by Nicolas go inside:  
         ```
         /Art/Nicolas/
         ```
