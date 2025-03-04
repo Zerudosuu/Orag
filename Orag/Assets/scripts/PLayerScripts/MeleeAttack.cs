@@ -23,7 +23,7 @@ public class MeleeAttack : MonoBehaviour
     public GameObject AccessPlayerScripts;
     public float range;
 
-    public GameObject sparkPrefab;
+   // public GameObject sparkPrefab;
 
 
     void Start()
@@ -73,7 +73,7 @@ public class MeleeAttack : MonoBehaviour
                 if(enemy.name == "Snail")           
                 enemy.GetComponent<snail>().TakeDamage(meleeDamage);
 */
-               Instantiate(sparkPrefab, enemy.transform.position, Quaternion.identity);
+             //  Instantiate(sparkPrefab, enemy.transform.position, Quaternion.identity);
          }
 
             foreach (Collider2D enemy in hitEnemies_far) // kpaag harayo 50% less damage 
@@ -86,7 +86,7 @@ public class MeleeAttack : MonoBehaviour
                 if (enemy.name == "Snail")
                     enemy.GetComponent<snail>().TakeDamage(meleeDamage * 0.5f);
 */
-                Instantiate(sparkPrefab, enemy.transform.position, Quaternion.identity);
+              //  Instantiate(sparkPrefab, enemy.transform.position, Quaternion.identity);
             }
 
 

@@ -12,9 +12,9 @@ public class jumpshit : MonoBehaviour
     [Tooltip("Mga kaipuhan iset sa player")]
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
-    [SerializeField] private LayerMask groundLayer;
     [SerializeField] private Transform Slime_Position;
-    private Animator animator;
+    [SerializeField] private LayerMask groundLayer;
+    [SerializeField] private Animator animator;
 
 
 
@@ -59,13 +59,13 @@ public class jumpshit : MonoBehaviour
 
 
     [Header("CUSTOM GRAVITY")]
-    private float currentFallMuliplier;
     [Range(0.1f,6)]
-    [SerializeField] private float fallMuliplier = 6f;
+    [SerializeField] private float fallMuliplier = 3f;
     [Range(0.1f, 6)]
-    [SerializeField] private float lowJumpMultiplier = 4f;
+    [SerializeField] private float lowJumpMultiplier = 2f;
     [Range(-1, -12)]
     [SerializeField] private float maxFallSpeed;
+    private float currentFallMuliplier;
 
 
     [Header("OTHERS")]
